@@ -22,8 +22,8 @@ public class ControllerTest {
         int thirdlyRandom = (int) (Math.random() * (max - min));
 
 
-        currentTimeMillis();
-        return "" + firstRandom + "--" + secondRandom + "--" + thirdlyRandom;
+        long currentTimeMillis = currentTimeMillis();
+        return "多个随机数 : " + firstRandom + "--" + secondRandom + "--" + thirdlyRandom + "--" + currentTimeMillis;
     }
 
 
